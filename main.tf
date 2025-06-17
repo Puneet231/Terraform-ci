@@ -10,3 +10,10 @@ instance_type = "t2.micro"
 tags = {
     Name = "myec2"
 }
+}
+
+terraform {
+  backend "s3" {
+    # Leave empty if you're using -backend-config to override all values
+  }
+}
