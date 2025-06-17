@@ -13,7 +13,11 @@ tags = {
 }
 
 terraform {
-  backend "s3" {
-    # Leave empty if you're using -backend-config to override all values
-  }
+    backend "s3"{
+    bucket = "vpcendpoint2312"
+    key = "statefile"
+    region = "us-east-1"
+    dynamodb_table = "test"
+
+    }
 }
